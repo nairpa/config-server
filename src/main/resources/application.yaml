@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          uri: https://github.com/nairpa/config-coderhouse-ecommerce
+          clone-on-start: true
+          default-label: main
+server:
+  port: 8081
